@@ -5,7 +5,7 @@
 }
 
 .button-main{
-    font-size:1.2rem; 
+    font-size:1rem; 
     padding: 1rem 2rem;
     border: 1px solid #52A14F;
     border-radius: 4px;
@@ -33,4 +33,12 @@
 }
 .link-btn{
 display: flex;
+}
+.icon-button-main{
+    font-size:1.5rem; 
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    color:grey;
+    background-color: white;
 }
