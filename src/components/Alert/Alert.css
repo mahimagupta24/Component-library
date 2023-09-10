@@ -1,4 +1,4 @@
-.alert-main{
+.documentation-main{
     display: flex;
 }
 .documentation{
@@ -13,4 +13,56 @@
 }
 .documentation-text{
     font-size:1.2rem;
+}
+
+.documentation-sub-heading{
+    font-size: 1.2rem;
+}
+
+.code-block{
+    display: block;
+    border: 1px solid grey;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: large;
+    margin-top:2rem;
+    background-color: #F9F8F9;
+}
+.success-alert{
+    background-color: #53C050;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    /* width: 20rem; */
+}
+.warning-alert{
+    background-color: #FEEFB3;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    /* width: 20rem; */
+}
+.error-alert{
+    background-color: #FFBABA;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0.7rem 0;
+    padding: 1rem;
+}
+.info-alert{
+    background-color:#BBEEFF;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0.7rem 0;
+    padding: 1rem;
 }
