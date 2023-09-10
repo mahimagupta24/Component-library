@@ -28,6 +28,7 @@
     margin-top:2rem;
     background-color: #F9F8F9;
     border-radius: .4rem;
+   max-width: 100%;
 }
 .alert{
     border-radius: 3px;

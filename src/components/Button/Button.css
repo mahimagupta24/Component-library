@@ -1,0 +1,36 @@
+.buttons{
+    display:flex;
+    gap:4rem;
+    padding:4px
+}
+
+.button-main{
+    font-size:1.2rem; 
+    padding: 1rem 2rem;
+    border: 1px solid #52A14F;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.btn-main{
+    font-size:1.2rem; 
+    padding: 1rem 2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color:black
+}
+
+.new-code-block{
+    display: block;
+    border: 1px solid grey;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: large;
+    margin-top:2rem;
+    background-color: #F9F8F9;
+    border-radius: .4rem;
+   width: 70vw;
+}
+.link-btn{
+display: flex;
+}
