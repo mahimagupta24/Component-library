@@ -1,61 +1,51 @@
-import Header from "../Header";
-import SideBar from "../sidebar";
 import "./Alert.css";
 
-export default function Alert() {
+export default function Alert({ status, children }) {
+  const checkStatus = () => {
+    switch (status) {
+      case "success":
+        return {
+          backgroundColor: "#53C050",
+          icon: "fas fa-check",
+          message: "Green often indicates something successful or positive.",
+        };
+      case "warning":
+        return {
+          backgroundColor: "#FEEFB3",
+          icon: "fas fa-exclamation-triangle",
+          message: "Yellow often indicates a warning that might need attention",
+        };
+      case "info":
+        return {
+          backgroundColor: "#BBEEFF ",
+          icon: "fas fa-info-circle",
+          message:
+            "Blue often indicates a neutral informative change or action.",
+        };
+      case "error":
+        return {
+          backgroundColor: "#FFBABA",
+          icon: "fas fa-times-circle",
+          message: " Red often indicates a dangerous or negative situation",
+        };
+      default:
+        return {
+          backgroundColor: "transparent",
+          icon: "",
+          message: "",
+        };
+    }
+  };
+
+  const { backgroundColor: bgColor, icon, message } = checkStatus();
+
   return (
-    <div>
-      <Header />
-
-      <div className="documentation-main">
+    <div className="alert" style={{ backgroundColor: bgColor }}>
+      {icon && (
         <div>
-          <SideBar />
+          <i className={icon}></i> {message}
         </div>
-        <div className="documentation">
-          <h1 className="documentation-heading">Alerts</h1>
-          <div>
-            <p className="documentation-text">
-              Alert messages can be used to notify the user about something
-              special: danger, success, information or warning.
-            </p>
-            
-            <div className="success-alert">
-              {" "}
-              <i class="fas fa-check"></i> Green often indicates something successful or positive.
-            </div>
-            <div class="warning-alert"> 
-        <i class="fas fa-exclamation-triangle"></i> Yellow often indicates a warning that might need attention.
+      )}
     </div>
-            <div class="error-alert"> 
-        <i class="fas fa-times-circle"></i> Red often indicates a dangerous or negative situation.
-    </div>
-   
-            <div class="info-alert"> 
-        <i class="fas fa-info-circle"></i> Blue often indicates a neutral informative change or action.
-    </div>
-    <h4 className="documentation-sub-heading">How To Use Alert Component</h4>
-            <pre>
-                <div className="code-block">
-              {`<div class="success-alert"> Green often indicates something successful or positive.
-     <i class="fas fa-check"></i> 
-</div>
-
-<div class="warning-alert"> 
-        <i class="fas fa-exclamation-triangle"></i> Yellow often indicates a warning that might need attention.
-    </div>
-
-<div class="error-alert"> 
-       <i class="fas fa-times-circle"></i> Red often indicates a dangerous or negative situation.
-</div>
-<div class="info-alert"> 
-        <i class="fas fa-info-circle"></i> Blue often indicates a neutral informative change or action.
-</div>
-`}
-           </div>
-            </pre>
-          </div>
-        </div>
-      </div>
-      </div>
   );
 }
