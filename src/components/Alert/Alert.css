@@ -27,6 +27,7 @@
     font-size: large;
     margin-top:2rem;
     background-color: #F9F8F9;
+    border-radius: .4rem;
 }
 .alert{
     border-radius: 3px;

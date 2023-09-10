@@ -4,10 +4,10 @@ export default function ImageAvatar ({ src, size, name })  {
   const findSize = () => {
     const picSize = size.toLowerCase();
     switch (picSize) {
-      case "sm":
+      case "2xs":
         return 60;
 
-      case "md":
+      case "sm":
         return 80;
 
       case "lg":

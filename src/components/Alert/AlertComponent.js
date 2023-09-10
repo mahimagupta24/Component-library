@@ -27,7 +27,7 @@ export default function AlertComponent() {
             <h4 className="documentation-sub-heading">
               How To Use Alert Component
             </h4>
-            <pre>
+            <pre >
               <div className="code-block">
                 {`          <Alert status="success"/>
           <Alert status="warning"/>

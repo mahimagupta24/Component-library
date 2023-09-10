@@ -1,6 +1,6 @@
 import "./Alert.css";
 
-export default function Alert({ status, children }) {
+export default function Alert({ status }) {
   const checkStatus = () => {
     switch (status) {
       case "success":
