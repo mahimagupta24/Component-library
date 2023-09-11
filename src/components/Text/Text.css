@@ -1,0 +1,10 @@
+.alignment-text{
+    display: flex;
+    gap:2rem;
+    border:1px solid grey;
+    width:45%;
+}
+.aligned-text{
+    margin:1rem;
+    font-size:1rem
+}

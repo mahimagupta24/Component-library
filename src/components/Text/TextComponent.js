@@ -1,7 +1,9 @@
 
 import Header from "../Header";
 import SideBar from "../sidebar";
+import AlignmentText from "./AlignmentText";
 import Text from "./Text";
+import "./Text.css"
 
 export default function TextComponent() {
   return (
@@ -39,6 +41,23 @@ export default function TextComponent() {
    <Text size="xl">This is a component library</Text>
    <Text size="sm">This is a component library</Text>
         
+`}
+              </div>
+            </pre>
+            <h3> Alignment Text</h3>
+            <div className="alignment-text">
+             <AlignmentText alignedText="left">This text is aligned to left</AlignmentText>
+             <AlignmentText alignedText="center">This text is aligned to center</AlignmentText>
+             <AlignmentText alignedText="right">This text is aligned to right </AlignmentText>
+            </div>
+            <pre>
+              <div className="new-code-block">
+                {`
+      <AlignmentText alignedText="left">This text is aligned to left</AlignmentText>
+      
+      <AlignmentText alignedText="center">This text is aligned to center</AlignmentText>
+      
+      <AlignmentText alignedText="right">This text is aligned to right </AlignmentText>
 `}
               </div>
             </pre>
