@@ -42,3 +42,13 @@ display: flex;
     color:grey;
     background-color: white;
 }
+.floating-btn{
+    border-radius: 50%;
+    background-color: #4DABB0;
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left:2rem;
+    cursor: pointer;
+   
+}

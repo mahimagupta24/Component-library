@@ -5,7 +5,7 @@ export default function Alert({ status }) {
     switch (status) {
       case "success":
         return {
-          backgroundColor: "#53C050",
+          backgroundColor: "#C6FFC1",
           icon: "fas fa-check",
           message: "Green often indicates something successful or positive.",
         };

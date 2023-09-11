@@ -4,6 +4,7 @@ import Button from "./Button";
 import "./Button.css";
 import IconButton from "./ButtonIcon";
 import LinkButton from "./ButtonLink";
+import FloatingButton from "./FloatingButton";
 
 export default function ButtonComponent() {
   return (
@@ -62,6 +63,20 @@ export default function ButtonComponent() {
      <IconButton icon = "fas fa-shopping-cart"/>
      
      <IconButton icon = "fas fa-trash"/>
+`}
+              </div>
+            </pre>
+            <h3>Floating Buttons</h3>
+            <div className="buttons">
+             <FloatingButton icon ="fas fa-plus"/>
+             <FloatingButton icon= "fas fa-edit"/>
+            </div>
+            <pre>
+              <div className="new-code-block">
+                {`
+   <FloatingButton icon ="fas fa-plus"/>
+  
+   <FloatingButton icon= "fas fa-edit"/>
 `}
               </div>
             </pre>
